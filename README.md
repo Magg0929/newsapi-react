@@ -1,7 +1,7 @@
 # newsapi-react
  Desarrollo de prueba tecnica usando React y el api NewsAPI
  
-###Para la instalación de paquetes y dependencias
+### Para la instalación de paquetes y dependencias
 ```
 npm install
 ```
