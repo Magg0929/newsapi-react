@@ -1,0 +1,136 @@
+    
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  
+  .card.black {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .card.white {
+    background-color: #fff;
+    color: #333;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="submit"],
+  input[type="reset"]{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="reset"] {
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="reset"]:hover {
+    background-color: #777;
+  }
+  
+  .dropdown-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .table-container{
+    max-width: 750px;
+    max-height: 500px;
+    overflow: scroll;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-family: 'PT Serif', serif;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      max-width: 100%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    th {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    tr {
+      border: 1px solid #ccc;
+    }
+    td {
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 40%;
+    }
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+    td:nth-of-type(1):before {
+        content: "Imagen";
+      }
+      td:nth-of-type(2):before {
+        content: "Titulo";
+      }
+      td:nth-of-type(3):before {
+        content: "Descripción";
+      }
+      td:nth-of-type(4):before {
+        content: "Autor";
+      }
+  }
+
+  img {
+    max-width: 225px;
+    height: auto;
+  }
+  .no-notices{
+    color: #333;
+    font-family: 'PT Serif', serif;
+  }
+  
+  
