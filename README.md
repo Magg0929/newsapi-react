@@ -8,5 +8,5 @@ npm install
 
 ### Para compilar el codigo
 ```
-npm run serve
+npm run dev
 ```
